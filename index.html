@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    <link rel="icon" type="image/png" href="HACKINSEC-11-16-2023.gif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>HackinSec-Google Dorker</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://dorker.hackinsec.com">
+        <img src="HACKINSEC-11-16-2023.gif" width="112" height="28">
+      </a>
+   </div>
+   <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <!-- <a class="button is-primary">
+          <strong>Sign up</strong>
+        </a> -->
+        <a href="/dorker-cli.html" class="button is-dark">
+          Google Dorker - CLI
+        </a>
+        <a href="https://buymeacoffee.com/rohsec" target="_blank"class="button is-dark">
+            Buy me a coffee
+          </a>
+      </div>
+    </div>
+  </nav>
+      <progress id="prog" class="progress is-small is-primary" max="100"></progress>
+        <h1 class="title is-centered has-text-centered has-text-grey-darker is-size-1">Google Dorker</h1>
+      <p class="is-centered has-text-centered">This is a reimplementation of <a href="https://twitter.com/taksec" target="">@TakSec's</a> "Google Dorks for Bug Bounty" using Python.</p>
+      <p class="is-centered has-text-centered">The original tool can be found <a href="https://taksec.github.io/google-dorks-bug-bounty/" target="_blank">here</a></p>
+              <div class="container">
+       <div class="section has-text-centered mx-6 is-normal">
+        <input type="text" id="inp" class="input" placeholder="Enter domain">
+        <div id="warn" class="is-left has-text-left"></div>
+        <button class="button is-primary my-4" py-click="dorker">Update Domain</button>
+       </div>
+       <script type="py" src="dork.py" config="config.toml" target="out"></script>
+       <div id="out" class="box mx-6 pb-2 mb-2">    
+        <!-- <h1>This is box</h1> -->
+        </div>
+      </div>
+  </body>
+</html>
