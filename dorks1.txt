@@ -122,3 +122,41 @@
 
 > site:*/joomla/login
 
+### Misc
+> site:www.notion.so "example.com"
+
+> site:www.figma.com "example.com"
+
+> site:*.atlassian.net "example.com"
+
+> site:*.herokuapp.com "example.com"
+
+> site:*.ondigitalocean.app "example.com"
+
+> site:*.workers.dev "example.com"
+
+> site:*.pages.dev "example.com"
+
+> site:*.vercel.app "example.com"
+
+> site:*.github.io "example.com"
+
+> site:*.amazonaws.com "example.com"
+
+> site:*.firebaseapp.com "example.com"
+
+> intext:https://discord.gg AND "example.com"
+
+> site:*.slack.com "example.com"
+
+> site:*.zendesk.com "example.com"
+
+> site:www.npmjs.com "example.com"
+
+> site:bitbucket.org "example.com"
+
+### External
+
+// https://gist.github.com/search?q=example.com
+// https://github.com/search?q=example.com&type=code
+// https://gitlab.com/search?search=example.com&nav_source=navbar
